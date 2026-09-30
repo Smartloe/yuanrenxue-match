@@ -1,0 +1,16 @@
+[
+  {
+    "frame": 3,
+    "fn": "f",
+    "scope": "local",
+    "name": "t",
+    "value": "yrx_xhr_breakpoint_littleQ"
+  },
+  {
+    "frame": 3,
+    "fn": "f",
+    "scope": "local",
+    "name": "c",
+    "value": "yrx_xhr_breakpoint_littleQ"
+  }
+]

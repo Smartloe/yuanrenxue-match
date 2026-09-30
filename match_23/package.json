@@ -1,0 +1,14 @@
+{
+  "name": "match_23",
+  "version": "1.0.0",
+  "description": "猿人学第23题 - js加密 · 感知 · 加强ob壳混淆（异化 MD5 纯 JS 还原）",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "selftest": "node tools/verify_crypto.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "deobfuscator": "^2.4.6"
+  }
+}

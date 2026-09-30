@@ -1,0 +1,366 @@
+{
+  "done": [
+    {
+      "title": "新手试炼1：观气寻诀",
+      "number": 7,
+      "difficulty": 1,
+      "category": "新手引导",
+      "special": null,
+      "href": "guide1",
+      "exp": 50,
+      "finish": true
+    },
+    {
+      "title": "新手试炼2：引气入体",
+      "number": 8,
+      "difficulty": 1,
+      "category": "新手引导",
+      "special": null,
+      "href": "guide2",
+      "exp": 50,
+      "finish": true
+    },
+    {
+      "title": "新手试炼3：点亮灵根",
+      "number": 9,
+      "difficulty": 1,
+      "category": "新手引导",
+      "special": null,
+      "href": "guide3",
+      "exp": 50,
+      "finish": true
+    },
+    {
+      "title": "新手试炼4：练气锻体",
+      "number": 10,
+      "difficulty": 1,
+      "category": "新手引导",
+      "special": null,
+      "href": "guide4",
+      "exp": 50,
+      "finish": true
+    },
+    {
+      "title": "新手试炼5：强化修为",
+      "number": 11,
+      "difficulty": 1,
+      "category": "新手引导",
+      "special": null,
+      "href": "guide5",
+      "exp": 50,
+      "finish": true
+    },
+    {
+      "title": "新手试炼6：练气初成",
+      "number": 12,
+      "difficulty": 1,
+      "category": "新手引导",
+      "special": null,
+      "href": "guide6",
+      "exp": 100,
+      "finish": true
+    },
+    {
+      "title": "js 混淆 - 源码乱码",
+      "number": 13,
+      "difficulty": 2,
+      "category": "js加密",
+      "special": null,
+      "href": "1",
+      "exp": 107,
+      "finish": true
+    },
+    {
+      "title": "js 混淆 - 动态cookie 1",
+      "number": 14,
+      "difficulty": 2,
+      "category": "js加密",
+      "special": null,
+      "href": "2",
+      "exp": 121,
+      "finish": true
+    },
+    {
+      "title": "访问逻辑 - 推心置腹",
+      "number": 15,
+      "difficulty": 2,
+      "category": "骚操作",
+      "special": null,
+      "href": "3",
+      "exp": 85,
+      "finish": true
+    },
+    {
+      "title": "js逆向 - window蜜罐",
+      "number": 27,
+      "difficulty": 2,
+      "category": null,
+      "special": null,
+      "href": "16",
+      "exp": 95,
+      "finish": true
+    },
+    {
+      "title": "2022新年挑战",
+      "number": 31,
+      "difficulty": 3,
+      "category": "骚操作",
+      "special": null,
+      "href": "20",
+      "exp": 300,
+      "finish": true
+    },
+    {
+      "title": "一叶障目 - 控制台检测",
+      "number": 32,
+      "difficulty": 4,
+      "category": "骚操作",
+      "special": null,
+      "href": "11",
+      "exp": 350,
+      "finish": true
+    },
+    {
+      "title": "感知 - 加强ob壳混淆",
+      "number": 35,
+      "difficulty": 2,
+      "category": "js加密",
+      "special": 2,
+      "href": "23",
+      "exp": 107,
+      "finish": true
+    },
+    {
+      "title": "密探 - 熟悉的算法，陌生的答案",
+      "number": 38,
+      "difficulty": 2,
+      "category": "js加密",
+      "special": 2,
+      "href": "26",
+      "exp": 107,
+      "finish": true
+    },
+    {
+      "title": "奇钥 - 非对称，进入另一套规则",
+      "number": 40,
+      "difficulty": 3,
+      "category": "js加密",
+      "special": 2,
+      "href": "28",
+      "exp": 176,
+      "finish": true
+    },
+    {
+      "title": "隐算 - 简单算法，复杂构建",
+      "number": 42,
+      "difficulty": 3,
+      "category": "js加密",
+      "special": 2,
+      "href": "30",
+      "exp": 137,
+      "finish": true
+    }
+  ],
+  "undone": [
+    {
+      "title": "入门级js",
+      "number": 23,
+      "difficulty": 1,
+      "category": "js加密",
+      "special": null,
+      "href": "12",
+      "exp": 70,
+      "finish": false
+    },
+    {
+      "title": "入门级cookie",
+      "number": 24,
+      "difficulty": 1,
+      "category": "js加密",
+      "special": null,
+      "href": "13",
+      "exp": 70,
+      "finish": false
+    },
+    {
+      "title": "天杀的Http2.0",
+      "number": 28,
+      "difficulty": 1,
+      "category": "骚操作",
+      "special": null,
+      "href": "17",
+      "exp": 70,
+      "finish": false
+    },
+    {
+      "title": "乌拉乌拉乌拉",
+      "number": 30,
+      "difficulty": 1,
+      "category": null,
+      "special": null,
+      "href": "19",
+      "exp": 81,
+      "finish": false
+    },
+    {
+      "title": "雪碧图、样式干扰",
+      "number": 16,
+      "difficulty": 2,
+      "category": "css加密",
+      "special": null,
+      "href": "4",
+      "exp": 107,
+      "finish": false
+    },
+    {
+      "title": "验证码 - 图文点选",
+      "number": 20,
+      "difficulty": 2,
+      "category": "验证码",
+      "special": null,
+      "href": "8",
+      "exp": 107,
+      "finish": false
+    },
+    {
+      "title": "备周则意怠-常见则不疑",
+      "number": 26,
+      "difficulty": 2,
+      "category": "骚操作",
+      "special": null,
+      "href": "15",
+      "exp": 95,
+      "finish": false
+    },
+    {
+      "title": "初识 - 魔改标准算法",
+      "number": 34,
+      "difficulty": 2,
+      "category": "js加密",
+      "special": 2,
+      "href": "22",
+      "exp": 107,
+      "finish": false
+    },
+    {
+      "title": "知名 - 当变量名“活”过来时",
+      "number": 37,
+      "difficulty": 2,
+      "category": "js加密",
+      "special": 2,
+      "href": "25",
+      "exp": 121,
+      "finish": false
+    },
+    {
+      "title": "异钥 - 不对称的语言，被拆散的结构",
+      "number": 39,
+      "difficulty": 2,
+      "category": "js加密",
+      "special": 2,
+      "href": "27",
+      "exp": 131,
+      "finish": false
+    },
+    {
+      "title": "混淆 - 混乱构建，动态迷局",
+      "number": 41,
+      "difficulty": 2,
+      "category": "js加密",
+      "special": 2,
+      "href": "29",
+      "exp": 107,
+      "finish": false
+    },
+    {
+      "title": "js 混淆 - 乱码增强",
+      "number": 17,
+      "difficulty": 3,
+      "category": "js加密",
+      "special": null,
+      "href": "5",
+      "exp": 156,
+      "finish": false
+    },
+    {
+      "title": "js 混淆 - 回溯",
+      "number": 18,
+      "difficulty": 3,
+      "category": "js加密",
+      "special": null,
+      "href": "6",
+      "exp": 156,
+      "finish": false
+    },
+    {
+      "title": "动态字体，随风漂移",
+      "number": 19,
+      "difficulty": 3,
+      "category": "css加密",
+      "special": null,
+      "href": "7",
+      "exp": 137,
+      "finish": false
+    },
+    {
+      "title": "js 混淆 - 动态cookie 2",
+      "number": 21,
+      "difficulty": 3,
+      "category": "js加密",
+      "special": null,
+      "href": "9",
+      "exp": 176,
+      "finish": false
+    },
+    {
+      "title": "备而后动-勿使有变",
+      "number": 25,
+      "difficulty": 3,
+      "category": "js加密",
+      "special": null,
+      "href": "14",
+      "exp": 500,
+      "finish": false
+    },
+    {
+      "title": "守心 - 简单的指令",
+      "number": 33,
+      "difficulty": 3,
+      "category": "js加密",
+      "special": null,
+      "href": "21",
+      "exp": 200,
+      "finish": false
+    },
+    {
+      "title": "不惑 - 零宽字符下的 JS 黑盒突围",
+      "number": 36,
+      "difficulty": 3,
+      "category": "js加密",
+      "special": 2,
+      "href": "24",
+      "exp": 176,
+      "finish": false
+    },
+    {
+      "title": "js 混淆 - 重放攻击对抗",
+      "number": 22,
+      "difficulty": 4,
+      "category": "js加密",
+      "special": null,
+      "href": "10",
+      "exp": 1000,
+      "finish": false
+    },
+    {
+      "title": "jsvmp - 洞察先机",
+      "number": 29,
+      "difficulty": 4,
+      "category": "js加密",
+      "special": null,
+      "href": "18",
+      "exp": 500,
+      "finish": false
+    }
+  ]
+}

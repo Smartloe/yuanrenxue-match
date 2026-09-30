@@ -1,0 +1,11 @@
+{
+  "name": "match_11",
+  "version": "1.0.0",
+  "description": "猿人学第11题 - 一叶障目 · 控制台检测（JSVMP + WlzShield 控制台检测盾，CDP 取值解法）",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "extract": "node utils/extract.js"
+  },
+  "license": "MIT"
+}

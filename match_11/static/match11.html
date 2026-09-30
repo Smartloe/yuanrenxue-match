@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第十一题 一叶障目 控制台检测 - 猿人学爬虫逆向练习平台</title>
+    <link rel="stylesheet" href="/static/new_match/css/home.css?v=20260914">
+<link rel="stylesheet" href="/static/new_match/css/index.css">
+<link rel="stylesheet" href="/static/new_match/css/question.css">
+<link rel="stylesheet" href="/static/new_match/css/common.css">
+<script src="/static/new_match/jquery/jquery.js"></script>
+<script src="/static/new_match/alert.js"></script>
+<link rel="stylesheet" href="/static/new_match/modallayer/modallayer.min.css">
+<script src="/static/new_match/modallayer/modallayer-ie.min.js"></script>
+<script src="/static/new_match/js/tierStyleMap.js"></script>
+<script src="/static/new_match/js/expUp.js"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var params = new URLSearchParams(location.search);
+        var ch = params.get('u');
+        if (ch) {
+          _hmt.push(['_setCustomVar', 1, 'source', ch]);
+        }
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f80b2b389f44bbfb3bfe1704817d44e0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<script>
+(function () {
+  var CONFIG = {
+    siteName: "猿人学练习平台",
+    title: "请使用电脑访问",
+    desc: "当前练习平台主要面向 PC 浏览器设计，题目阅读、控制台调试、抓包分析与脚本运行都依赖桌面环境。为了获得完整体验，请使用电脑访问。",
+    subDesc: "手机端暂不开放，给你带来不便，敬请谅解。",
+    minWidth: 900,          // 小于这个宽度，且命中移动端特征时触发
+    blockTablet: false      // 是否连平板一起拦截，true=拦平板，false=默认只拦手机
+  };
+
+  function isMobileUA() {
+    var ua = navigator.userAgent || navigator.vendor || window.opera || "";
+    return /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|Windows Phone/i.test(ua);
+  }
+
+  function isTabletUA() {
+    var ua = navigator.userAgent || "";
+    return /iPad|Tablet|PlayBook|Silk/i.test(ua) || (/Android/i.test(ua) && !/Mobile/i.test(ua));
+  }
+
+  function isSmallScreen() {
+    return Math.min(window.innerWidth || 0, window.innerHeight || 0) < CONFIG.minWidth;
+  }
+
+  function shouldBlock() {
+    if (CONFIG.blockTablet) {
+      return (isMobileUA() || isTabletUA()) && isSmallScreen();
+    }
+    return isMobileUA() && isSmallScreen();
+  }
+
+  if (!shouldBlock()) return;
+  if (window.__yrxMobileBlocked__) return;
+  window.__yrxMobileBlocked__ = true;
+
+  var style = document.createElement("style");
+  style.innerHTML = `
+    html.yrx-mobile-blocked,
+    body.yrx-mobile-blocked{
+      overflow:hidden !important;
+      height:100% !important;
+      touch-action:none !important;
+    }
+
+    .yrx-mobile-mask{
+      position:fixed;
+      inset:0;
+      z-index:999999;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      box-sizing:border-box;
+      background:
+        radial-gradient(circle at top left, rgba(255,193,120,.20), transparent 32%),
+        radial-gradient(circle at top right, rgba(255,140,60,.16), transparent 30%),
+        linear-gradient(180deg, rgba(255,248,240,.98), rgba(255,252,248,.98));
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    }
+
+    .yrx-mobile-card{
+      width:min(92vw, 420px);
+      background:rgba(255,255,255,.96);
+      border:1px solid rgba(241,127,25,.14);
+      border-radius:22px;
+      box-shadow:
+        0 20px 60px rgba(0,0,0,.10),
+        0 8px 24px rgba(241,127,25,.08);
+      overflow:hidden;
+      animation: yrxMobileFadeUp .28s cubic-bezier(.2,.9,.2,1);
+    }
+
+    @keyframes yrxMobileFadeUp{
+      from{ opacity:0; transform:translateY(16px) scale(.98); }
+      to{ opacity:1; transform:translateY(0) scale(1); }
+    }
+
+    .yrx-mobile-head{
+      padding:20px 22px 14px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      background:linear-gradient(180deg, rgba(255,247,235,.95), rgba(255,255,255,.92));
+      border-bottom:1px solid rgba(0,0,0,.04);
+    }
+
+    .yrx-mobile-icon{
+      width:44px;
+      height:44px;
+      border-radius:14px;
+      flex:0 0 44px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(180deg, rgba(255,138,48,.14), rgba(255,122,0,.08));
+      border:1px solid rgba(255,122,0,.12);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.7);
+      font-size:22px;
+    }
+
+    .yrx-mobile-head-text{
+      min-width:0;
+    }
+
+    .yrx-mobile-site{
+      font-size:12px;
+      color:#9a6a30;
+      font-weight:700;
+      margin-bottom:4px;
+      letter-spacing:.2px;
+    }
+
+    .yrx-mobile-title{
+      font-size:20px;
+      line-height:1.3;
+      color:#1f1f1f;
+      font-weight:900;
+      margin:0;
+    }
+
+    .yrx-mobile-body{
+      padding:18px 22px 12px;
+      color:#444;
+    }
+
+    .yrx-mobile-desc{
+      margin:0 0 12px;
+      font-size:14px;
+      line-height:1.9;
+      color:#444;
+    }
+
+    .yrx-mobile-sub{
+      margin:0;
+      font-size:13px;
+      line-height:1.8;
+      color:#8a6b42;
+      background:rgba(255,247,230,.75);
+      border:1px solid rgba(255,122,0,.10);
+      border-radius:14px;
+      padding:10px 12px;
+    }
+
+    .yrx-mobile-footer{
+      padding:14px 22px 22px;
+    }
+
+    .yrx-mobile-btn{
+      width:100%;
+      height:46px;
+      border:none;
+      border-radius:14px;
+      background:linear-gradient(180deg, #f59a39, #f17f19);
+      color:#fff;
+      font-size:15px;
+      font-weight:800;
+      letter-spacing:.2px;
+      box-shadow:0 10px 24px rgba(241,127,25,.22);
+    }
+
+    .yrx-mobile-tips{
+      margin-top:10px;
+      text-align:center;
+      font-size:12px;
+      color:#9a8b7a;
+      line-height:1.7;
+    }
+  `;
+  document.head.appendChild(style);
+
+  function mountBlocker() {
+    document.documentElement.classList.add("yrx-mobile-blocked");
+    document.body.classList.add("yrx-mobile-blocked");
+
+    var wrap = document.createElement("div");
+    wrap.className = "yrx-mobile-mask";
+    wrap.innerHTML = `
+      <div class="yrx-mobile-card" role="dialog" aria-modal="true" aria-label="请使用电脑访问">
+        <div class="yrx-mobile-head">
+          <div class="yrx-mobile-icon">💻</div>
+          <div class="yrx-mobile-head-text">
+            <div class="yrx-mobile-site">${CONFIG.siteName}</div>
+            <h2 class="yrx-mobile-title">${CONFIG.title}</h2>
+          </div>
+        </div>
+        <div class="yrx-mobile-body">
+          <p class="yrx-mobile-desc">${CONFIG.desc}</p>
+          <p class="yrx-mobile-sub">${CONFIG.subDesc}</p>
+        </div>
+        <div class="yrx-mobile-footer">
+          <button class="yrx-mobile-btn" type="button">我知道了</button>
+          <div class="yrx-mobile-tips">建议使用 Chrome / Edge 等桌面浏览器访问</div>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(wrap);
+
+    var btn = wrap.querySelector(".yrx-mobile-btn");
+    btn.addEventListener("click", function () {
+      // 不关闭遮罩，只做轻微反馈，避免用户误以为还能继续使用
+      btn.innerText = "请使用电脑访问";
+      btn.style.opacity = "0.92";
+    });
+
+    ["touchmove", "wheel", "scroll"].forEach(function (evt) {
+      wrap.addEventListener(evt, function (e) {
+        e.preventDefault();
+      }, { passive: false });
+    });
+  }
+
+  if (document.body) {
+    mountBlocker();
+  } else {
+    document.addEventListener("DOMContentLoaded", mountBlocker);
+  }
+})();
+</script>
+    <link rel="stylesheet" href="/static/new_match/css/question-page.css">
+</head>
+<body>
+
+<style>
+/* AI简历测评入口的 NEW 角标。样式内嵌在模板里而不是写进 home.css，
+   是为了不用 bump ?v= 破静态缓存；这次改动只涉及这一个模板文件。 */
+.yrx-new-tag {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 0 4px;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    background: linear-gradient(135deg, #ff7a18, #ff3d00);
+    border-radius: 7px;
+    vertical-align: top;
+    letter-spacing: .5px;
+}
+</style>
+<header>
+    <div class="header-container">
+        <div class="header-logo center" onclick="location.href='/';" style="cursor: pointer;">
+            <div class="header-logo-title"><img height="50" src="/static/new_match/images/logo.png" alt=""></div>
+            <div class="header-logo-desc">
+                逆向反混淆练习平台
+            </div>
+        </div>
+        <div class="header-menu">
+            <a href="/" class="header-menu-item header-menu-item-active"><span>首页</span></a>
+            <a href="https://resume.yuanrenxue.cn/" class="header-menu-item" target="_blank"><span>AI简历测评<i class="yrx-new-tag">NEW</i></span></a>
+            <a href="https://j.youzan.com/3OMDUQ" class="header-menu-item" target="_blank"><span>猿人学爬虫逆向课</span></a>
+            <a href="https://tool.yuanrenxue.cn/" class="header-menu-item" target="_blank"><span>采集分析工具</span></a>
+            <a href="https://jsvmp.net/" class="header-menu-item" target="_blank"><span>JS盾</span></a>
+            <a href="https://www.yuanrenxue.cn/" class="header-menu-item" target="_blank"><span>猿人学官网</span></a>
+        </div>
+        <div class="user-info center">
+            <!-- 未登录 -->
+            <button class="login-btn">登录/注册</button>
+            <!-- 已登录 -->
+
+            <div class="user-menu-wrap" style="position: relative; display: inline-block;">
+              <div class="user-logo isLogin" style="display:none;"></div>
+
+              <div class="user-dropdown" style="display:none;">
+                <a href="/profile" class="user-dropdown-item">个人中心</a>
+                <a href="javascript:void(0)" class="user-dropdown-item js-logout">登出</a>
+              </div>
+            </div>
+            <div class="user-name isLogin user-menu-wrap user-menu-trigger" style="display: none"><span class="caret"></span></div>
+        </div>
+    </div>
+</header>
+<div class="bg">
+    <div class="login-box">
+        <span class="close">×</span>
+        <p class="login-title">
+            <img height="45" src="/static/new_match/images/logo.png" alt=""><br>
+            逆向反混淆练习平台
+        </p>
+        <!-- 登录 -->
+        <div class="login-content">
+            <p class="login-type">
+                <span class="act type1">微信登录</span>
+            </p>
+            <div class="wx-login" style="text-align: center;">
+                <div id="login_container"></div>
+            </div>
+<!--            <div class="wx-login-no-account" style="display: none">-->
+<!--                <div style="font-size: 14px;color: #666;margin: 0 20px;">未查询到微信绑定的账号，是否需要注册</div>-->
+<!--                <button type="button" id="register-new-account">注册新账号</button>-->
+<!--                <button type="button" id="bind-exist-account">绑定已有账号</button>-->
+<!--            </div>-->
+<!--            <div class="register" style="display: none">-->
+<!--                注册新账号-->
+<!--                <input type="text" placeholder="请输入您要注册的昵称，默认使用微信名~">-->
+<!--                <input type="password" placeholder="密码">-->
+<!--                <input type="password" placeholder="重复密码">-->
+<!--                <input type="text" placeholder="请输入邀请码">-->
+<!--                没有邀请码请扫描下方微信，备注“邀请码”领取（邀请码完全免费）-->
+<!--                <div class="ewm2"></div>-->
+<!--                <button id="register">注册</button>-->
+<!--            </div>-->
+<!--            <div class="bind-old-account" style="display: none">-->
+<!--                绑定旧账号-->
+<!--                <input type="text" placeholder="请输入注册时的账号">-->
+<!--                <input type="password" placeholder="密码">-->
+<!--                <button id="login">绑定</button>-->
+<!--            </div>-->
+        </div>
+        <!-- 登录之后 -->
+        <div class="login-after">
+            扫码加好友 <br>
+            获取<b>猿人学比赛题解题攻略.pdf </b><br>
+            进混淆对抗练习群
+            <div class="ewm"></div>
+        </div>
+
+    </div>
+</div>
+
+<!--<div class="bg">-->
+<!--    <div class="login-box">-->
+<!--        <span class="close">×</span>-->
+<!--        <p class="login-title">-->
+<!--            <img height="45" src="/static/new_match/images/logo.png" alt=""><br>-->
+<!--            逆向反混淆练习平台-->
+<!--        </p>-->
+<!--        &lt;!&ndash; 登录 &ndash;&gt;-->
+<!--        <div class="login-content">-->
+<!--            <p class="login-type">-->
+<!--                <span class="act type1">微信登录</span>-->
+<!--            </p>-->
+<!--            <div class="wx-login" style="text-align: center;">-->
+<!--                <div id="login_container"></div>-->
+<!--            </div>-->
+<!--            <div class="wx-login-no-account" style="display: none">-->
+<!--                <div style="font-size: 14px;color: #666;margin: 0 20px;">未查询到微信绑定的账号，是否需要注册</div>-->
+<!--                <button type="button" id="register-new-account">注册新账号</button>-->
+<!--                <button type="button" id="bind-exist-account">绑定已有账号</button>-->
+<!--            </div>-->
+<!--            <div class="register" style="display: none">-->
+<!--                注册新账号-->
+<!--                <input type="text" placeholder="请输入您要注册的昵称，默认使用微信名~">-->
+<!--                <input type="password" placeholder="密码">-->
+<!--                <input type="password" placeholder="重复密码">-->
+<!--                <input type="text" placeholder="请输入邀请码">-->
+<!--                没有邀请码请扫描下方微信，备注“邀请码”领取（邀请码完全免费）-->
+<!--                <div class="ewm2"></div>-->
+<!--                <button id="register">注册</button>-->
+<!--            </div>-->
+<!--            <div class="bind-old-account" style="display: none">-->
+<!--                绑定旧账号-->
+<!--                <input type="text" placeholder="请输入注册时的账号">-->
+<!--                <input type="password" placeholder="密码">-->
+<!--                <button id="login">绑定</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; 登录之后 &ndash;&gt;-->
+<!--        <div class="login-after">-->
+<!--            扫码加好友 <br>-->
+<!--            获取<b>猿人学比赛题解题攻略.pdf </b><br>-->
+<!--            进混淆对抗练习群-->
+<!--            <div class="ewm"></div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<script>
+(function () {
+    // 避免重复插入
+    if (document.getElementById('yrx-feedback-btn')) return;
+
+    // 注入样式
+    var style = document.createElement('style');
+    style.innerHTML = `
+        #yrx-feedback-btn {
+            position: fixed;
+            right: 28px;
+            bottom: 32px;
+            z-index: 99999;
+            width: 132px;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            background: linear-gradient(135deg, #ff7a18, #ff3d00);
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 24px;
+            box-shadow: 0 8px 22px rgba(255, 90, 0, 0.35);
+            cursor: pointer;
+            user-select: none;
+            transition: all .2s ease;
+        }
+
+        #yrx-feedback-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 26px rgba(255, 90, 0, 0.48);
+        }
+
+        #yrx-feedback-panel-mask {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, .38);
+            z-index: 99998;
+            display: none;
+        }
+
+        #yrx-feedback-panel {
+            position: fixed;
+            right: 28px;
+            bottom: 92px;
+            z-index: 99999;
+            width: 280px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, .18);
+            padding: 20px;
+            display: none;
+            font-family: Arial, "Microsoft YaHei", sans-serif;
+        }
+
+        #yrx-feedback-panel h3 {
+            margin: 0 0 12px;
+            font-size: 18px;
+            color: #222;
+        }
+
+        #yrx-feedback-panel p {
+            margin: 8px 0;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        #yrx-feedback-panel .qq {
+            font-size: 22px;
+            font-weight: 800;
+            color: #ff4d00;
+            letter-spacing: 1px;
+        }
+
+        #yrx-feedback-close {
+            position: absolute;
+            right: 14px;
+            top: 10px;
+            font-size: 22px;
+            color: #999;
+            cursor: pointer;
+        }
+
+        #yrx-feedback-close:hover {
+            color: #333;
+        }
+    `;
+    document.head.appendChild(style);
+
+    // 遮罩
+    var mask = document.createElement('div');
+    mask.id = 'yrx-feedback-panel-mask';
+
+    // 反馈面板
+    var panel = document.createElement('div');
+    panel.id = 'yrx-feedback-panel';
+    panel.innerHTML = `
+        <span id="yrx-feedback-close">×</span>
+        <h3>问题反馈</h3>
+        <p>如果你在使用网站时发现问题，欢迎联系我们反馈。</p>
+        <p>联系 QQ：</p>
+        <p class="qq">605226760</p>
+    `;
+
+    // 按钮
+    var btn = document.createElement('div');
+    btn.id = 'yrx-feedback-btn';
+    btn.innerText = '问题反馈';
+
+    document.body.appendChild(mask);
+    document.body.appendChild(panel);
+    document.body.appendChild(btn);
+
+    function showPanel() {
+        mask.style.display = 'block';
+        panel.style.display = 'block';
+    }
+
+    function hidePanel() {
+        mask.style.display = 'none';
+        panel.style.display = 'none';
+    }
+
+    btn.addEventListener('click', showPanel);
+    mask.addEventListener('click', hidePanel);
+    document.getElementById('yrx-feedback-close').addEventListener('click', hidePanel);
+})();
+</script>
+<div class="question-content" style="top: 50px">
+    <!--    <div style="width: 1170px;margin: auto;"></div>-->
+    <div class="left-content">
+        <div class="left-content-title">
+            <div class="left-content-text" id="topic-title"></div>
+        </div>
+        <div class="left-content-main">
+            <div class="left-content-text">
+                <div style="font-size:15px;color:#333;font-weight:700;margin-bottom:10px;">
+                    题目：一叶障目 - 控制台检测
+                </div>
+
+                <div style="line-height:1.8;">
+                    <p style="margin:0 0 10px;">
+                        你行至一处戈壁，突然狂风骤起，目不能视。与此同时，似乎曾经引以为傲的所有能力在顷刻间化为齑粉。恐惧与阴霾席卷了你的全身。
+                    </p>
+
+                    <p style="margin:0 0 8px;">
+                        <b>试炼目标：</b>请尝试打开控制台，并恢复控制台的全部功能
+                    </p>
+
+                    <div style="margin:10px 0 8px;"><b>试炼步骤：</b></div>
+                    <ol style="margin:0 0 10px;padding-left:18px;color:#666;">
+                        <li>1. 获得控制台打印出的 secretkey 对应的字符串（你需要恢复 console.log 功能，并且看到它打印的内容）</li>
+                        <li>2. 在控制台执行 window.secretkey(第一步获取的字符串 + "3f73bd8671faaa92")</li>
+                        <li>3. 将函数的最后返回值填入输入框，并 <b>提交答案</b>。</li>
+                    </ol>
+
+                    <div style="padding:10px 12px;background:rgba(255,247,230,1);border-radius:8px;color:#8a4b00;">
+                        <b>提醒：</b>发送最后一页时，请将 userAgent 修改为：yuanrenxue，否则将不会返回最后一页的数据
+                    </div>
+                    <div style="margin-top:1%;padding:10px 12px;background:rgba(255,247,230,1);border-radius:8px;color:#8a4b00;">
+                        <b>提醒2：</b>发送请求时请携带 sessionid 参数，每个已登录用户 数字答案都不同~
+                    </div>
+                    <div style="margin-top:1%;padding:10px 12px;background:rgba(255,247,230,1);border-radius:8px;color:#8a4b00;">
+                        <b>提醒3：</b>感谢 <a href="https://jsvmp.net/" target="_blank">JS盾</a> 与 <a href="https://captcha.wangluozhe.com/" target="_blank">WlzShield</a> 对本题目提供的技术赞助
+                    </div>
+                </div>
+            </div>
+            <div class="pgx" id="pgxPager">
+
+
+</div>
+
+            <div style="margin-top: 20px">
+                <div class="captcha-prompt">答案输入此提交框内，点击提交即可</div>
+                <div style="text-align: -webkit-center;">
+                    <input type="text" id="answer" class="form-control"
+                           style="margin-top: 20px; width: 170px;height: 42px;text-align: center">
+                </div>
+            </div>
+        </div>
+
+        <div class="left-content-operate center">
+            <div class="left-content-button" data-toggle="modal" data-target="#submit_code" onclick="submit()">
+                提交答案
+            </div>
+        </div>
+    </div>
+    <div class="right-aside">
+        <div class="right-card" id="sideCard">
+
+            <div class="right-card-title">试炼信息</div>
+            <div class="right-card-split"></div>
+            <div class="side-body">
+                <!-- 1) 元信息 -->
+                <div class="side-sec">
+                    <div class="side-sec-title">题目信息</div>
+                    <div class="meta">
+                        <div class="meta-row"><span>难度</span><b id="metaDifficulty">-</b></div>
+                        <div class="meta-row"><span>经验值</span><b id="metaScore">-</b></div>
+                    </div>
+                    <div class="tags" id="metaTags" style="margin-top:10px;"></div>
+                </div>
+
+                <!-- 2) 题目规则 -->
+                <div class="side-sec">
+                    <div class="side-sec-title">规则</div>
+                    <ul class="side-list">
+                        <li>1. 大部分题目，每位修士答案皆不同</li>
+                        <li>2. 提交接口提交过频会导致账号被封禁</li>
+                        <li>3. 扫描下方二维码可以联系作者，反馈问题，提交BUG等</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wechat-info">
+                <img width="100%" src="/static/new_match/images/wechat-group.png" alt="">
+                加我微信
+                <br>
+                领取比赛题解题攻略
+                <br>
+                拉你进反混淆分享群
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-container" style="justify-content:space-around">
+        <div class="footer-text">
+            Copyright © 2026 猿人学 Python <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">备案号：蜀ICP备2022000052号-2</a>
+        </div>
+    </div>
+</footer>
+<script src="/static/new_match/question/general.js"></script>
+<script src="/static/new_match/js/common.js?v=20260914"></script>
+<script>
+    let _ajax = $.ajax
+    $.ajax = function (){
+        if (arguments[0].url === "/api/match/11"){
+            window.match1 = arguments[0].data.m
+        }
+        else {
+            _ajax.apply(this, arguments)
+        }
+    }
+</script>
+<script src="/static/new_match/question/11/yrx_check_devtools_jsvmp.js?v=1.0.2"></script>
+<script>
+    function submit() {
+        $.ajax({
+            url: '/a/11',
+            method: 'POST',
+            data: {answer: $("#answer").val()},
+            success: function (data) {
+                if (data.code === 2) {
+
+                    // 通关成功，取 exp 接口
+                    $.ajax({
+                        url: '/api/userExp',
+                        dataType: 'json',
+                        success: function (userExp_data) {
+                            expUpAlert("恭喜通关！！！", {
+                                totalExp: userExp_data.real_exp - data.exp,
+                                gainExp: data.exp,
+                                subtitle: "灵息归位，修为精进。",
+                                breakthroughKey: null,
+                                unlockedGateMaxKey: userExp_data.breakthrough_tier,
+                                autoCloseMs: 240000
+                            });
+                        }
+                    })
+                    // setTimeout(() => {
+                    //   window.location.href = '/' ;
+                    // }, 2000);
+                } else if (data.code === 1) {
+                    successAlert("您已做过这道题了~ 请勿重复通关")
+                    setTimeout(() => {
+                        window.location.href = '/';
+                    }, 2000);
+                } else {
+                    failedAlert("答案错误~ 请重新尝试哦")
+                }
+            },
+            error: function () {
+                failedAlert("请登录后再提交答案吧~")
+            }
+        })
+    }
+</script>
+</body>
+</html>

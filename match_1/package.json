@@ -1,0 +1,10 @@
+{
+  "name": "match_1",
+  "version": "1.0.0",
+  "description": "猿人学第1题 - js混淆 · 源码乱码（chrsz=16 的魔改 MD5，纯 Node 还原）",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "license": "MIT"
+}

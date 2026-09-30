@@ -1,0 +1,448 @@
+(join) sizzle1790692386750
+(join) Top|Right|Bottom|Left
+(fromCharCode) ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=
+(join) ﱞ165927,ﱞ68806,ﱞ233829
+(fromCharCode) undefined
+(fromCharCode) length
+(fromCharCode) 347
+(fromCharCode) 29540
+(fromCharCode) 16233
+(fromCharCode) 6990
+(fromCharCode) 3617
+(fromCharCode) 1572
+(fromCharCode) 2191
+(fromCharCode) 1448
+(fromCharCode) 447
+(fromCharCode) 541
+(fromCharCode) 382
+(fromCharCode) 103
+(fromCharCode) 213
+(fromCharCode) 374
+(fromCharCode) 148
+(fromCharCode) 220
+(fromCharCode) 4359
+(fromCharCode) 2871
+(fromCharCode) 2332
+(fromCharCode) 1602
+(fromCharCode) 458
+(fromCharCode) 581
+(fromCharCode) 307
+(fromCharCode) 164
+(fromCharCode) 166
+(fromCharCode) 8505507
+(fromCharCode) 4499956
+(fromCharCode) 3770780
+(fromCharCode) 1908121
+(fromCharCode) 757728
+(fromCharCode) 1105273
+(fromCharCode) 667966
+(fromCharCode) 223242
+(fromCharCode) 214197
+(fromCharCode) 95756501
+(fromCharCode) 38753713
+(fromCharCode) 18243186
+(fromCharCode) 13025590
+(fromCharCode) 2473374
+(fromCharCode) 3141727
+(fromCharCode) 15036410
+(fromCharCode) 4279148
+(fromCharCode) 3997450
+(fromCharCode) 20402312
+(fromCharCode) 6148060
+(fromCharCode) 8000974
+(fromCharCode) 21179449
+(fromCharCode) 6733395
+(fromCharCode) 4162107
+(fromCharCode) 39090458
+(fromCharCode) 10926645
+(fromCharCode) 7516632
+(fromCharCode) 33274112
+(fromCharCode) 17910918
+(fromCharCode) 19181980
+(fromCharCode) 54625892
+(fromCharCode) 25973068
+(fromCharCode) 36724549
+(fromCharCode) 179921372
+(fromCharCode) 98673573
+(fromCharCode) 94189798
+(fromCharCode) 184127916
+(fromCharCode) 59748695
+(fromCharCode) 39838868
+(fromCharCode) 34811762
+(fromCharCode) 18297415
+(fromCharCode) 17987483
+(fromCharCode) 92989207
+(fromCharCode) 80198546
+(fromCharCode) 43268841
+(fromCharCode) 35077019
+(fromCharCode) 13453219
+(fromCharCode) 10535846
+(fromCharCode) 135178872
+(fromCharCode) 87003487
+(fromCharCode) 44217079
+(fromCharCode) 77278912
+(fromCharCode) 25281646
+(fromCharCode) 27253752
+(fromCharCode) 58604123
+(fromCharCode) 12007463
+(fromCharCode) 15257365
+(fromCharCode) 21368115
+(fromCharCode) 9721630
+(fromCharCode) 4885414
+(fromCharCode) 82666154
+(fromCharCode) 67561795
+(fromCharCode) 31551985
+(fromCharCode) 38814754
+(fromCharCode) 10710028
+(fromCharCode) 6740230
+(fromCharCode) 3601532
+(fromCharCode) 1917820
+(fromCharCode) 1350419
+(fromCharCode) 50625331
+(fromCharCode) 10007351
+(fromCharCode) 13493067
+(fromCharCode) 23046769
+(fromCharCode) 5729075
+(fromCharCode) 4577964
+(fromCharCode) 65156309
+(fromCharCode) 15865281
+(fromCharCode) 15750382
+(fromCharCode) 7344103
+(fromCharCode) 6060837
+(fromCharCode) 2738730
+(fromCharCode) 119700601
+(fromCharCode) 89860027
+(fromCharCode) 50177365
+(fromCharCode) 49838024
+(fromCharCode) 22691614
+(fromCharCode) 24039460
+(fromCharCode) 86620240
+(fromCharCode) 69551628
+(fromCharCode) 38206232
+(fromCharCode) 159842042
+(fromCharCode) 49857757
+(fromCharCode) 27287894
+(fromCharCode) 38035844
+(fromCharCode) 31212837
+(fromCharCode) 19697834
+(fromCharCode) 26149563
+(fromCharCode) 23246755
+(fromCharCode) 11404800
+(fromCharCode) 18920759
+(fromCharCode) 11867290
+(fromCharCode) 6542291
+(fromCharCode) 23071921
+(fromCharCode) 16288893
+(fromCharCode) 8415509
+(fromCharCode) 24172027
+(fromCharCode) 13956833
+(fromCharCode) 11886755
+(fromCharCode) 17188635
+(fromCharCode) 4103587
+(fromCharCode) 5863334
+(fromCharCode) 42618019
+(fromCharCode) 35420854
+(fromCharCode) 15226425
+(fromCharCode) 123155694
+(fromCharCode) 36353810
+(fromCharCode) 21536415
+(fromCharCode) 17606596
+(fromCharCode) 9804914
+(fromCharCode) 5944294
+(fromCharCode) 51653565
+(fromCharCode) 35547136
+(fromCharCode) 34410328
+(fromCharCode) 23765721
+(fromCharCode) 9894728
+(fromCharCode) 14258984
+(fromCharCode) 15647989
+(fromCharCode) 5415052
+(fromCharCode) 6560901
+(fromCharCode) 47929804
+(fromCharCode) 25784371
+(fromCharCode) 30191148
+(fromCharCode) 49680541
+(fromCharCode) 18135974
+(fromCharCode) 14244787
+(fromCharCode) 183169789
+(fromCharCode) 95821275
+(fromCharCode) 70678075
+(fromCharCode) 67535119
+(fromCharCode) 23841402
+(fromCharCode) 13888416
+(fromCharCode) 16287374
+(fromCharCode) 9639249
+(fromCharCode) 7751858
+(fromCharCode) 22937251
+(fromCharCode) 11856357
+(fromCharCode) 13499396
+(fromCharCode) 11574728
+(fromCharCode) 7302051
+(fromCharCode) 7392874
+(fromCharCode) 152279343
+(fromCharCode) 69576060
+(fromCharCode) 79348057
+(join) ﱞ89755-ﱞ58515*ﱞ184855*ﱞ58515-ﱞ19832*ﱞ87734*ﱞ87734-ﱞ19832*ﱞ58515-ﱞ87734*ﱞ116953,ﱞ35452-ﱞ58515-ﱞ19832-ﱞ194319*ﱞ184855-ﱞ155636*ﱞ58515,ﱞ151501-ﱞ87734*ﱞ184855*ﱞ19832-ﱞ116953-ﱞ58515*ﱞ19832-ﱞ58515,ﱞ131746-ﱞ194319*ﱞ184855*ﱞ19832-ﱞ194319*ﱞ87734-ﱞ116953-ﱞ19832*ﱞ155636
+(join) ﱞ113459,ﱞ16338,ﱞ181361,ﱞ84240,ﱞ249263,ﱞ152142,ﱞ55021,ﱞ220044,ﱞ122923,ﱞ25802,ﱞ190825
+(fromCharCode) apply
+(fromCharCode) call
+(fromCharCode) globalThis
+(fromCharCode) Function
+(join) ﱞ161606,ﱞ64485,ﱞ229508
+(fromCharCode) pop
+(fromCharCode) push
+(join) ﱞ161606,ﱞ181361[" ",0][0],ﱞ249263 .pop()?ﱞ181361[0][0][" ",ﱞ161606]:undefined
+(join) ﱞ229508,ﱞ181361[ﱞ64485],ﱞ249263 .pop()?ﱞ181361[ﱞ64485][ﱞ229508]:undefined
+(fromCharCode) indexOf
+(join) ﱞ209753,ﱞ112632,ﱞ180534,ﱞ15511
+(fromCharCode) bind
+(fromCharCode) concat
+(fromCharCode) constructor
+(fromCharCode) join
+(fromCharCode) slice
+(join) ﱞ249263 .pop(),ﱞ249263 .pop(),ﱞ248436
+(join) ﱞ249263 .pop(),ﱞ181361[0][0],ﱞ248436
+(join) ﱞ160779,ﱞ257900,ﱞ63658
+(join) ﱞ141024,ﱞ43903,ﱞ249263 .pop()?ﱞ43903[" ",ﱞ141024]:undefined
+(join) ﱞ150488,ﱞ53367,ﱞ218390
+(join) ﱞ113459,ﱞ150488,ﱞ181361 .concat([ﱞ189171]),ﱞ84240
+(fromCharCode) arguments
+(join) this||ﱞ181361[" ",0][0],arguments,ﱞ121269
+(join) ﱞ257073,ﱞ92050,ﱞ189171
+(join) ﱞ72295,ﱞ237318,ﱞ140197
+(fromCharCode) String
+(fromCharCode) fromCharCode
+(fromCharCode) 108
+(fromCharCode) 120
+(fromCharCode) 100
+(fromCharCode) 109
+(fromCharCode) 101
+(fromCharCode) 102
+(fromCharCode) 2228
+(fromCharCode) 1174
+(fromCharCode) 288
+(fromCharCode) 133
+(fromCharCode) 251
+(fromCharCode) 177
+(fromCharCode) 281
+(fromCharCode) 488
+(fromCharCode) 415
+(fromCharCode) 629
+(fromCharCode) 587
+(fromCharCode) 256
+(fromCharCode) 544
+(fromCharCode) 523
+(fromCharCode) 724
+(fromCharCode) 634
+(fromCharCode) 128
+(fromCharCode) 806
+(fromCharCode) 822
+(fromCharCode) 865
+(fromCharCode) 35790
+(fromCharCode) 897
+(fromCharCode) 252
+(fromCharCode) 64512
+(fromCharCode) 1028
+(fromCharCode) 965
+(fromCharCode) 1362
+(fromCharCode) 1232
+(fromCharCode) 1243
+(fromCharCode) 1298
+(fromCharCode) 1361
+(fromCharCode) 1349
+(fromCharCode) 1352
+(fromCharCode) 1351
+(fromCharCode) 1196
+(fromCharCode) 1052929
+(fromCharCode) 1845
+(fromCharCode) 1586
+(fromCharCode) 1513
+(fromCharCode) 1537
+(fromCharCode) 1541
+(fromCharCode) 1544
+(fromCharCode) 1577
+(fromCharCode) 1581
+(fromCharCode) 1584
+(fromCharCode) 1589
+(fromCharCode) 1654
+(fromCharCode) 1779
+(fromCharCode) 1763
+(fromCharCode) 1747
+(fromCharCode) 1706
+(fromCharCode) 1787
+(fromCharCode) 1844
+(fromCharCode) 1473
+(fromCharCode) 1948
+(fromCharCode) 1932
+(fromCharCode) 1861
+(fromCharCode) 2079
+(fromCharCode) 1961
+(fromCharCode) 2158
+(fromCharCode) 2084
+(fromCharCode) 2221
+(fromCharCode) 2167
+(fromCharCode) typeof window!='undefined'?window:typeof global!='undefined'?global:Function('return this')()
+(fromCharCode) open
+(fromCharCode) write
+(fromCharCode) close
+(fromCharCode) isChromium
+(fromCharCode) isWebKit
+(fromCharCode) isIPad
+(fromCharCode) isIphone
+(fromCharCode) prototype
+(fromCharCode) toString
+(fromCharCode) key
+(fromCharCode) onInit
+(fromCharCode) value
+(fromCharCode) forceRedirect
+(fromCharCode) trigger
+(fromCharCode) startMonitoring
+(fromCharCode) checkAll
+(fromCharCode) checkEnv
+(fromCharCode) checkDimensions
+(fromCharCode) checkDebugger
+(fromCharCode) checkConsole
+(fromCharCode) checkConsoleErrorProperty
+(fromCharCode) checkConsoleDirTrap
+(fromCharCode) checkConsoleLogArrayPerformance
+(fromCharCode) checkPromiseErrorGetter
+(fromCharCode) enumerable
+(fromCharCode) configurable
+(fromCharCode) writable
+(fromCharCode) defineProperty
+(fromCharCode) string
+(fromCharCode) object
+(fromCharCode) function
+(fromCharCode) symbol
+(fromCharCode) iterator
+(fromCharCode) addEventListener
+(fromCharCode) keydown
+(fromCharCode) contextmenu
+(fromCharCode) readyState
+(fromCharCode) loading
+(fromCharCode) DOMContentLoaded
+(fromCharCode) name
+(fromCharCode) devtools
+(fromCharCode) timer
+(fromCharCode) triggered
+(fromCharCode) largeObject
+(fromCharCode) fill
+(fromCharCode) test_data
+(fromCharCode) iframe
+(fromCharCode) console
+(fromCharCode) messageHandler
+(fromCharCode) random_str
+(fromCharCode) ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+(fromCharCode) charAt
+(fromCharCode) floor
+(fromCharCode) random
+(fromCharCode) RISK_KEYS
+(fromCharCode) dimension_mismatch
+(fromCharCode) debugger_pause
+(fromCharCode) console_element_id_get
+(fromCharCode) console_error_property_get
+(fromCharCode) console_dir_error_name_get
+(fromCharCode) console_dir_tampered
+(fromCharCode) console_log_array_performance
+(fromCharCode) promise_error_getter
+(fromCharCode) triggeredMap
+(fromCharCode) log
+(fromCharCode) clear
+(fromCharCode) error
+(fromCharCode) debug
+(fromCharCode) info
+(fromCharCode) dir
+(fromCharCode) table
+(fromCharCode) group
+(fromCharCode) groupEnd
+(fromCharCode) groupCollapsed
+(fromCharCode) postMessage
+(fromCharCode) replace
+(fromCharCode) createElement
+(fromCharCode) createEvent
+(fromCharCode) body
+(fromCharCode) appendChild
+(fromCharCode) contains
+(fromCharCode) defineProperties
+(fromCharCode) back
+(fromCharCode) now
+(fromCharCode) _wlz_sanity_
+(fromCharCode) get
+(fromCharCode) [object 
+(fromCharCode) [object Object]
+(fromCharCode) [object Array]
+(fromCharCode) includes
+(fromCharCode) Storage
+(fromCharCode) _wlz_p_
+(fromCharCode) has_
+(fromCharCode) _*_
+(fromCharCode) [native code]
+(fromCharCode) contentWindow
+(fromCharCode) contentDocument
+(fromCharCode) style
+(fromCharCode) display
+(fromCharCode) none
+(fromCharCode) <!DOCTYPE html>
+
+(fromCharCode) <html>
+
+(fromCharCode) <head>
+
+(fromCharCode)     <meta charset="UTF-8">
+
+(fromCharCode)     <title>Redirecting...</title>
+
+(fromCharCode)     <meta http-equiv="refresh" content="0;url=https://match.yuanrenxue.cn">
+
+(fromCharCode) </head>
+
+(fromCharCode) <body>
+
+(fromCharCode)     <script>
+
+(fromCharCode)         // 多重跳转保证，确保页面被导航离开
+
+(fromCharCode)         try {
+
+(fromCharCode)             window.location.href = "https://match.yuanrenxue.cn";
+
+(fromCharCode)             window.location.replace("https://match.yuanrenxue.cn");
+
+(fromCharCode)             
+
+(fromCharCode)             // 如果上面被阻止，尝试打开新窗口
+
+(fromCharCode)             setTimeout(function() {
+
+(fromCharCode)                 window.open("https://match.yuanrenxue.cn", "_self");
+
+(fromCharCode)             }, 10);
+
+(fromCharCode)             // 终极方案：使用 data URL 中转
+
+(fromCharCode)                 window.location.href = "data:text/html," + encodeURIComponent("<script>window.location.href=\"https://match.yuanrenxue.cn\"<\/script>");
+
+(fromCharCode)             }, 50);
+
+(fromCharCode)         } catch(e) {
+
+(fromCharCode)             // 如果所有方法都失败，显示错误信息
+
+(fromCharCode)             document.body.innerHTML = "<h1>Access Denied</h1><p>Developer tools detected.</p>";
+
+(fromCharCode)         }
+
+(fromCharCode)     <\/script>
+
+(fromCharCode) </body>
+
+(fromCharCode) </html>
+(fromCharCode) srcdoc
+(fromCharCode) src
+(fromCharCode) about:blank
+(fromCharCode) visibilitychange
+(fromCharCode) SecretKey
+(fromCharCode) location
+(fromCharCode) href
+(fromCharCode) https://match.yuanrenxue.cn
+(fromCharCode) RandomString: 

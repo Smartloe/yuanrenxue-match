@@ -1,0 +1,11 @@
+{
+  "name": "match_30",
+  "version": "1.0.0",
+  "description": "猿人学第30题 - 隐算 · 简单算法，复杂构建（WASM + JSVMP 纯 JS 还原）",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "selftest": "node test/fuzz.js"
+  },
+  "license": "MIT"
+}
