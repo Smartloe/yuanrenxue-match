@@ -1,0 +1,83 @@
+{
+  "all": {
+    "1": {
+      "dbg": "GET /api/question/31?page=1&pageSize=10&kw=&m=&token=JUeOLKnS5aHoctBHg0OdV2VZnEJJ%2FlBAJRXH9qtvRnVK7bfHcSa1KT35M2utNHcL&now=1791594737815",
+      "nums": [
+        462273,
+        889329,
+        100908,
+        556536,
+        798880,
+        987936,
+        530875,
+        288371,
+        995440,
+        196401
+      ]
+    },
+    "2": {
+      "dbg": "GET /api/question/31?page=2&pageSize=10&kw=&m=&token=JUeOLKnS5aHoctBHg0OdVxNnjRaA4AALFW69N622LRNEUIPLhFR2MzsdxOZ%2B1jWg&now=1791594741863",
+      "nums": [
+        922516,
+        839600,
+        317790,
+        657354,
+        807096,
+        717174,
+        823355,
+        892457,
+        603396,
+        326318
+      ]
+    },
+    "3": {
+      "dbg": "GET /api/question/31?page=3&pageSize=10&kw=&m=&token=JUeOLKnS5aHoctBHg0OdV0%2BwBLz4yopSyRQIzOY2pE%2FzezeJYsC3ZV85fvLHz3ny&now=1791594743897",
+      "nums": [
+        366344,
+        807960,
+        245982,
+        159282,
+        310866,
+        911213,
+        188398,
+        792170,
+        685324,
+        675458
+      ]
+    },
+    "4": {
+      "dbg": "GET /api/question/31?page=4&pageSize=10&kw=&m=&token=JUeOLKnS5aHoctBHg0OdV4wOylCz%2FQZiMvuoObfsFuMhTm%2FSqX%2FtyZp%2FaoIPhb8h&now=1791594745857",
+      "nums": [
+        567106,
+        147206,
+        687060,
+        425054,
+        414395,
+        381232,
+        818299,
+        285341,
+        992982,
+        274173
+      ]
+    },
+    "5": {
+      "dbg": "GET /api/question/31?page=5&pageSize=10&kw=&m=&token=JUeOLKnS5aHoctBHg0OdV4eyYhdU3C1kTSEhQIgmB8bH9H5I6NCr2uSeoYmZqpnO&now=1791594747856",
+      "nums": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "total": 22849850,
+  "res": {
+    "status": 200,
+    "text": "{\"result\": \"fail\", \"msg\": \"wrong answer\", \"code\": 0}"
+  }
+}

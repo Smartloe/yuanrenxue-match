@@ -34,6 +34,7 @@
 | 28 | 奇钥 - 非对称，进入另一套规则 | 3 | ✅ 已通过 | 3/3 | `27382050` | `{"result":"success","created":false,"code":1,"exp":176}` |
 | 29 | 混淆 - 混乱构建，动态迷局 | 2 | ✅ 已通过 | 3/3 | `23325929` | `{"result":"success","created":true,"code":2,"exp":107}` |
 | 30 | 隐算 - 简单算法，复杂构建 | 3 | ✅ 已通过 | 3/3 | `29301602` | `—` |
+| 31 | 混元 - 对称迷局，另辟蹊径 | 3 | ✅ 已通过 | 3/3 | `29364247` | `{"result":"success","created":true,"code":2,"exp":156}` |
 | guide1 | 新手试炼1：观气寻诀 | 1 | ✅ 已通过 | 3/3 | `yrx_console_welcome_v1` | `—` |
 | guide2 | 新手试炼2：引气入体 | 1 | ✅ 已通过 | 3/3 | `yrx_network_welcome_v2_d33039f3fcbb2…` | `—` |
 | guide3 | 新手试炼3：点亮灵根 | 1 | ✅ 已通过 | 3/3 | `yrx_linggen_awakened_v1` | `—` |
